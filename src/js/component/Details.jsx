@@ -29,14 +29,14 @@ export const Details = () => {
         <button onClick={() => navigate(-1)} className="btn btn-primary">
           Back home
         </button>
-        <h1>{item?.properties?.name}</h1> 
+        <h1 className="text-center border-bottom">{item?.properties?.name}</h1> 
       </span>
       {params.detail === "people" ? (
         <div className="row">
-          <div className="col-5 col-md-5">
+          <div className="col-5 col-md-5 d-flex justify-content-end">
             <img
               src={`https://starwars-visualguide.com/assets/img/characters/${item.uid}.jpg`}
-              className="card-img-top"
+              className="w-75 h-75"
               alt="..."
             />
           </div>
@@ -59,10 +59,10 @@ export const Details = () => {
 
       {params.detail === "planets" ? (
         <div className="row">
-          <div className="col-5 col-md-5">
+          <div className="col-5 col-md-5 d-flex justify-content-end">
             <img
               src={`https://starwars-visualguide.com/assets/img/planets/${item.uid}.jpg`}
-              className="card-img-top"
+              className="card-img-top w-75 h-100"
               alt="..."
             />
           </div>
@@ -85,10 +85,10 @@ export const Details = () => {
 
       {params.detail === "vehicles" ? (
         <div className="row">
-          <div className="col-5 col-md-5">
+          <div className="col-5 col-md-5 d-flex justify-content-end">
             <img
               src={`https://starwars-visualguide.com/assets/img/vehicles/${item.uid}.jpg`}
-              className="card-img-top"
+              className="card-img-top w-100 h-100"
               alt="..."
             />
           </div>

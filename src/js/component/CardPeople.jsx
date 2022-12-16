@@ -14,7 +14,7 @@ export const CardPeople = ({ item }, props) => {
           className="card-img-top"
           alt="..."
         />
-        <div className="card-body">
+        <div className="card-body d-inline-block">
           <h5 className="card-title">{item.properties.name}</h5>
           <p className="card-text">Gender: {item.properties.gender}</p>
 
@@ -26,14 +26,14 @@ export const CardPeople = ({ item }, props) => {
             {store.favorites.includes(item.properties.name) ? (
               <button
                 onClick={() => actions.deleteFavorite(item.properties.name)}
-                className="btn btn-primary float-end"
+                className="btn btn-primary"
               >
                 <i className="fa-solid fa-heart"></i>
               </button>
             ) : (
               <button
                 onClick={() => actions.setFavorite(item.properties.name)}
-                className="btn btn-primary float-end"
+                className="btn btn-primary"
               >
                 <i className="fa-regular fa-heart"></i>
               </button>

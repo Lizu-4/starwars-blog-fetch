@@ -1,3 +1,17 @@
+body{
+
+}
+
+img{
+  height: 300px;
+  width: 300px;
+}
+
+#logo{
+  height: 50px;
+  width: 50px;
+}
+
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;

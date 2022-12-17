@@ -34,8 +34,8 @@ export const Navbar = () => {
                 : favorites.map((item) => {
                     return (
                       <li>
-                        <a className="dropdown-item" href="#">
-                          {item}
+                        <a onClick={()=> actions.deleteFavorite(item) } className="dropdown-item" href="#">
+                          {item} <strong>X</strong>
                         </a>
                       </li>
                     );
